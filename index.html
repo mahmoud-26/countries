@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Countries API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- start project -->
+  <div class="header">
+    <span>Where in the world?</span>
+    <ion-icon class="moon" name="moon-outline"></ion-icon>
+    <ion-icon class="sun" name="sunny-outline"></ion-icon>
+  </div>
+  <form class="inputs">
+    <input class="search-input" type="text" placeholder="Search for a country...">
+    <button class="search-btn" type="submit">
+      <ion-icon name="search"></ion-icon>
+    </button>
+  </form>
+  <div class="country">
+    <div class="card">
+      <img class="flag">
+      <div class="info">
+        <div class="name"></div>
+        <div class="details">
+          <p class="population"></p>
+          <p class="capital"></p>
+          <p class="region"></p>
+          <p class="area"></p>
+          <p class="car"></p>
+          <p class="map"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end project -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

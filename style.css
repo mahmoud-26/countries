@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;600;800&display=swap');
+:root {
+  --Dark-Blue: hsl(209, 23%, 22%); /* (Dark Mode Elements) */
+  --Very-Dark-Blue-1: hsl(207, 26%, 17%); /* (Dark Mode Background) */
+  --Very-Dark-Blue: hsl(200, 15%, 8%); /* (Light Mode Text) */
+  --Dark-Gray: hsl(0, 0%, 52%); /* (Light Mode Input) */
+  --Very-Light-Gray: hsl(0, 0%, 98%); /* (Light Mode Background) */
+  --White: hsl(0, 0%, 100%); /* (Dark Mode Text & Light Mode Elements ) */
+  --Shadow: hsl(0, 0%, 90%);
+  --Blue: blue;
+}
+* {
+  box-sizing: border-box;
+  font-family: 'Nunito Sans', sans-serif;
+}
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-color: var(--Very-Light-Gray);
+}
+.header {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  font-size: 16px;
+  font-weight: 800;
+  color: var(--Very-Dark-Blue);
+  background-color: var(--White);
+  justify-content: space-between;
+  box-shadow: 0 2px 5px 0 var(--Shadow);
+}
+.moon {
+  font-size: 20px;
+  color: var(--Very-Dark-Blue);
+}
+.sun {
+  color: var(--Very-Dark-Blue);
+  font-size: 20px;
+  display: none;
+}
+.inputs {
+  width: 100%;
+  padding: 30px 20px;
+  position: relative;
+}
+.search-input {
+  width: 100%;
+  padding: 15px 15px 15px 50px;
+  border: none;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: 800;
+  outline: none;
+  color: var(--Very-Dark-Blue);
+  background-color: var(--White);
+  box-shadow: 0 2px 5px 0 var(--Shadow);
+}
+::placeholder {
+  color: var(--Dark-Gray);
+}
+.search-btn {
+  color: var(--Dark-Gray);
+  font-size: 20px;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  left: 45px;
+  top: 53%;
+  transition: color 0.1s;
+  transform: translate(-50%, -50%);
+}
+.search-btn:active {
+  color: var(--Dark-Blue);
+}
+.country {
+  width: 100%;
+  padding: 10px 50px 20px 50px;
+}
+.card {
+  width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  color: var(--Very-Dark-Blue);
+  background-color: var(--White);
+  box-shadow: 0 3px 5px 0 var(--Shadow);
+}
+.flag {
+  width: 100%;
+}
+.info {
+  width: 100%;
+  padding: 20px 25px;
+}
+.name {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 0;
+}
+.details {
+ padding: 10px 0;
+}
+.details p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+a {
+  color: var(--Blue);
+}
